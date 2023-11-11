@@ -7,7 +7,7 @@ import java.util.List;
 import entities.enums.NivelFuncionario;
 
 public class Funcionario {
-    private String name;
+    private String nome;
     private NivelFuncionario nivel;
     private Double salarioBase;
 
@@ -18,18 +18,18 @@ public class Funcionario {
     }
 
     public Funcionario(String name, NivelFuncionario nivel, Double salarioBase, Departamento departamento) {
-        this.name = name;
+        this.nome = name;
         this.nivel = nivel;
         this.salarioBase = salarioBase;
         this.departamento = departamento;
     }
 
-    public String getName() {
-        return name;
+    public String getNome() {
+        return nome;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNome(String name) {
+        this.nome = name;
     }
 
     public NivelFuncionario getNivel() {
