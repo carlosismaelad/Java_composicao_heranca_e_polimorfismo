@@ -68,7 +68,7 @@ public class Funcionario {
         contratos.remove(contrato);
     }
 
-    public double Renda(int ano, int mes) {
+    public double renda(int ano, int mes) {
         double soma = salarioBase;
         Calendar cal = Calendar.getInstance();
         for (ContratoPorHora c : contratos) {
