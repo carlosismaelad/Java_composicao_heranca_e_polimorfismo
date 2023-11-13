@@ -33,5 +33,18 @@ public class App {
             System.out.println("Update");
         }
 
+        // Testando a sobrescrita do método withdraw
+        Account test1 = new Account(1001, "John Doe", 1000.00);
+        test1.withdraw(200.00);
+        System.out.println(test1.getBalance()); // 1000 - 200 - 5
+
+        Account test2 = new SavingsAccount(1002, "Bob", 1000.00, 0.01);
+        test2.withdraw(200.00);
+        System.out.println(test2.getBalance()); // 1000 - 200
+
+        Account test3 = new BusinessAccount(1003, "Maria", 1000.00, 500.00);
+        test3.withdraw(200.00);
+        System.out.println(test3.getBalance());
+
     }
 }
